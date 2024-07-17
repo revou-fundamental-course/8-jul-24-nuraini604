@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Mengatur font utama dan background gradient */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #b3ddfb, #FFFFFF);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Mengatur tampilan kontainer utama */
+.container {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Mengatur margin untuk header */
+.header {
+    margin-bottom: 1.5rem;
+}
+
+/* Mengatur tampilan heading */
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Mengatur tampilan paragraf */
+p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Mengatur tampilan form */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mengatur tampilan grup form */
+.form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Mengatur tampilan label */
+label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Mengatur tampilan input tipe number dan radio */
+input[type="number"], input[type="radio"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+/* Mengatur tampilan tombol pada form */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+/* Mengatur tampilan tombol */
+button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Mengatur tampilan tombol dengan tipe button */
+button[type="button"] {
+    background-color: #020202;
+    color: white;
+    flex: 1;
+    margin-right: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #636c70;
+}
+
+/* Mengatur tampilan tombol dengan tipe reset */
+button[type="reset"] {
+    background-color: #020202;
+    color: white;
+    flex: 1;
+    margin-left: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"]:hover {
+    background-color: #636c70;
+}
+
+/* Mengatur tampilan hasil */
+.result {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+}
+
+/* Mengatur tampilan heading hasil */
+.result h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Mengatur tampilan responsif */
+@media (max-width: 600px) {
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    button[type="button"],
+    button[type="reset"] {
+        margin: 0 0 1rem 0;
+    }
+
+    button[type="reset"] {
+        margin-top: 0.5rem;
+    }
+}
